@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button id="btn" type="button" />js테스트버튼</button>
+		<h1 id="display">이름출력영역</h1>
+	</div>
+
+</body>
+<script type="text/javascript">
+	$("#display").html("<strong>개구쟁이</br> 캔디콩</strong>");
+	$("#display").css("color","green");
+	
+	var btn=$("#btn");
+	var display=$("#display");
+	
+	btn.on("click",function(){
+		display.html("<font color='red'>우주여행</font>");
+		
+		btn.on("keydown",function(){
+			display.html("<font color='blue'>star plan</font>")
+		})
+	})
+</script>
+
+
+
+</html>

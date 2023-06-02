@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 var guestbookArray = [];
+		 /*
+		guestbookArray[0] = {
+			no : 1,
+			name : "황일영",
+			password : "1234",
+			content : "첫번째 방문입니다.",
+			showinfo : function() {
+				console.log(this.no + "   " + this.name + "  " + this.password
+						+ "  " + this.content);
+			}
+		};
+		guestbookArray[1] = {
+			no : 2,
+			name : "정우성",
+			password : "4646",
+			content : "왔다가요.",
+			showinfo : function() {
+				console.log(this.no + "   " + this.name + "  " + this.password
+						+ "  " + this.content);
+			}
+		};
+		guestbookArray[2] = {
+			no : 4,
+			name : "이효리",
+			password : "8888",
+			content : "왔다가요.",
+			showinfo : function() {
+				console.log(this.no + "   " + this.name + "  " + this.password
+						+ "  " + this.content);
+			}
+		};
+
+		for (var i = 0; i < guestbookArray.length; i++) {
+			guestbookArray[i].showinfo();
+		} */
+
+		var guestbookVo1 = {
+			no : 1,
+			name : "황일영",
+			password : "1234",
+			content : "첫번째 방문입니다.",
+			showinfo : function() {
+				console.log(this.no + "   " + this.name + "  " + this.password
+						+ "  " + this.content);
+			}
+		}
+		console.log(guestbookVo1);
+
+		var guestbookVo2 = {};
+		guestbookVo2.no = 2;
+		guestbookVo2.name = "정우성";
+		guestbookVo2.password = "4646";
+		guestbookVo2.content = "왔다가요";
+		guestbookVo2.showinfo = function() {
+			console.log(this.no + "   " + this.name + "  " + this.password);
+		}
+		console.log(guestbookVo2);
+
+		var guestbookVo3 = {
+			no : 4,
+			name : "이효리",
+			password : "8888",
+			content : "왔다가요.",
+			showinfo : function() {
+				console.log(this.no + "   " + this.name + "  " + this.password
+						+ "  " + this.content);
+			}
+		};
+		console.log(guestbookVo3);
+		
+		guestbookArray[0]=guestbookVo1;
+		guestbookArray.push(guestbookVo2);
+		guestbookArray.push(guestbookVo3);
+		
+		console.log(guestbookArray);
+		
+		//정우성 패스워드 출력
+		var password=guestbookArray[1].password;
+		console.log(password);
+		
+		
+		//이효리 showinfo 실행
+		guestbookArray[2].showinfo();
+		
+		
+		//전체를 showinfo()사용하여 출력
+		for (var i = 0; i < guestbookArray.length; i++) {
+			guestbookArray[i].showinfo();
+		}
+		
+		
+		
+	</script>
+
+
+
+</body>
+</html>

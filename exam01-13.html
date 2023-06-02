@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+
+		<!-- <input type = "button" value="js 버튼 테스트"> -->
+
+		<button id = "btn" type="submit">js버튼 테스트</button>
+		<p id="display">이름 출력영역</p>
+
+	</div>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+	//화면이 로딩될 때
+	window.onload=function(){
+		console.log("로딩후");	
+		
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+		
+		console.log(testArea);
+		//버튼을 클릭했을때->이벤트
+		testButton.onclick=function(){
+			console.log("버튼클릭");
+			
+			//testArea<--홍길동 빨간색
+			testArea.innerHTML="<font color = 'red'>홍길동</font>";
+		};
+		
+		
+	}
+
+</script>
+</html>

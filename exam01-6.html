@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var no = 4;
+	var str="안녕하세요";
+		function testA(){
+			console.log("testA 함수입니다.");
+			
+		}
+		testA();//testA 함수, ()실행
+		testA();
+	
+		//이름이 없는 함수(익명함수)--> 실제로 이름이 없으며 사용할 수 없다 -> 만들고 바로 사용,*변수에 넣어둔다
+		var testB=function(){
+			console.log("익명함수 입니다. 이름이 없어요");
+		}
+		testB();//testB 변수, ()실행
+		console.log(typeof testB);
+		console.log(typeof no);
+		
+		console.log("----------------------------");
+		
+		
+		</script>
+		<script type="text/javascript">
+		
+		var result = plus(5, 3);
+		console.log(result);
+		
+		var result2 = plus("안녕하세요", 3);
+		console.log(result2);
+		
+		
+		function plus(a,b){
+			var sum= a+b;
+			return sum;
+		}
+		</script>
+		
+		
+		
+</body>
+</html>

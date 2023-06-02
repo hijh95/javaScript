@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var name = "global";
+	
+	//정의 1번째 조사된다.
+	function checkscope(){
+		var name  = "local";
+		console.log(name);
+	}
+	
+	checkscope();
+	console.log(name);
+		</script>
+		
+		
+		
+</body>
+</html>

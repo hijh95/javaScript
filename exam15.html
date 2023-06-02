@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+
+	</ul>
+	<button id="btn" type="button" />li추가</button> 
+</body>
+<script type="text/javascript">
+	//버튼 클릭하면 콘솔에 버튼클릭 출력하기
+	$("button").on("click",function(){
+		console.log("버튼클릭")
+		
+		$("ul").append("<li>다섯번째 아이템 입니다.</li>")
+		$("ul").append("<li>여섯번째 아이템 입니다.</li>")
+		$("ul").append("<li>일곱번째 아이템 입니다.</li>")
+	});
+	
+	//li를 클릭하면 선택한 li를 삭제
+	
+	$("ul").on("click","li",function(){
+		$(this).remove();
+	})
+	
+</script>
+
+</html>
